@@ -9,13 +9,17 @@ public class Main {
         }
 
         System.out.println("Задание 2");
-        int newAge = 24;
-        if (newAge>=7 &&  newAge<18){
-            System.out.println("Ребенок ходит в школу");
-        } else if (newAge>=18 && newAge<24){
-            System.out.println("Человек уже закончил школу и может отправляться в университет");
-        }else if (newAge >=24){
+        int newAge = 8;
+        if (newAge >=24){
             System.out.println("Человек окончил университет и ему пора искать первую работу");
+        } else if (newAge>=18){
+            System.out.println("Человек уже закончил школу и может отправляться в университет");
+        }
+        else if (newAge<7){
+            System.out.println("Ребенок ходит в садик");
+        }
+        else {
+            System.out.println("Ребенок ходит в школу");
         }
 
         System.out.println("Задание 3");
@@ -27,11 +31,8 @@ public class Main {
 
         if (sittingUsed<sittingPlace){
             System.out.println("Есть еще " + (sittingPlace - sittingUsed) + " сидячих мест");
-
-//            if (sittingUsed ==sittingPlace){
-//                System.out.println("Сидячих мест нет");
            } else {
-            System.out.println("сидячих мест нет");
+            System.out.println("Cидячих мест нет");
         }
             if (otherPlace<sittingPlace){
                 System.out.println("Есть еще " + (standingPlace - otherPlace + " стоячих мест"));
@@ -39,10 +40,6 @@ public class Main {
             else {
                 System.out.println("Стоячих мест нет");
             }
-//            if (otherPlace==standingPlace){
-//                System.out.println("Стоячих мест нет");
-//            }
-
         }
     }
 
